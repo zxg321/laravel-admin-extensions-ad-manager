@@ -1,0 +1,36 @@
+{
+    "name"       : "zxg321/laravel-admin-extensions-ad-manager",
+    "description": "laravel 广告管理",
+    "type"       : "library",
+    "keywords"   : ["laravel-admin", "广告管理", "manager"],
+    "homepage"   : "https://github.com/zxg321/laravel-admin-extensions-ad-manager",
+    "license"    : "MIT",
+    "authors"    : [
+        {
+            "name" : "zxg321",
+            "email": "zxg321@qq.com"
+        }
+    ],
+    "require": {
+        "php"                 : ">=7.0.0",
+        "laravel/framework"   : "~5.5",
+        "zxg321/laravel-admin": "~1.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "laravel/laravel": "~5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zxg321\\Admin\\Ad\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zxg321\\Admin\\Ad\\AdServiceProvider"
+            ]
+
+        }
+    }
+}
